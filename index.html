@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magic Life Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h1>Magic Life Counter</h1>
+
+    <div class="dropdown">
+        <button class="dropbtn">Paramètres</button>
+        <div class="dropdown-content">
+            <a href="subpages/names.html">Change names</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+        </div>
+    </div>
+
+    <table>
+        <tr style="height: 5vh">
+            <td>
+                <span id="p1-name"></span>
+            </td>
+            <td>
+                <span id="p2-name"></span>
+            </td>
+        </tr>
+
+        <tr style="height: 35vh">
+            <td>
+                <button onclick="decreaseLife1(1,10)">-10</button>
+                <button onclick="decreaseLife1(1,1)">-1</button>
+                <span id="p1-life" style="width: 20px"></span>
+                <button onclick="increaseLife1(1,1)">+1</button>
+                <button onclick="increaseLife1(1,10)">+10</button>
+            </td>
+            <td>
+                <button onclick="decreaseLife1(2,10)">-10</button>
+                <button onclick="decreaseLife1(2,1)">-1</button>
+                <span id="p2-life"></span>
+                <button onclick="increaseLife1(2,1)">+1</button>
+                <button onclick="increaseLife1(2,10)">+10</button>
+            </td>
+        </tr>
+
+        <tr style="height: 5vh">
+            <td>
+                <span id="p3-name"></span>
+            </td>
+            <td>
+                <span id="p4-name"></span>
+            </td>
+        </tr>
+
+        <tr style="height: 35vh">
+            <td>
+                <button onclick="decreaseLife1(3,10)">-10</button>
+                <button onclick="decreaseLife1(3,1)">-1</button>
+                <span id="p3-life"></span>
+                <button onclick="increaseLife1(3,1)">+1</button>
+                <button onclick="increaseLife1(3,10)">+10</button>
+            </td>
+            <td>
+                <button onclick="decreaseLife1(4,10)">-10</button>
+                <button onclick="decreaseLife1(4,1)">-1</button>
+                <span id="p4-life"></span>
+                <button onclick="increaseLife1(4,1)">+1</button>
+                <button onclick="increaseLife1(4,10)">+10</button>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

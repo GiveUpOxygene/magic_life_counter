@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change names</title>
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href="names_style.css">
+</head>
+<body>
+    <h1>Welcome to the Test Page!</h1>
+    <p>This is a test page for your project.</p>
+    <table>
+        <tr>
+            <td><input id="p1-change" type="text" value="player1" onkeydown="if(event.keyCode===13 || event.type === 'blur') changePlayerName(1, event)"></td>
+            <td><input id="p2-change" type="text" value="player2" onkeydown="if(event.keyCode===13 || event.type === 'blur') changePlayerName(2, event)"></td>
+        </tr>
+        <tr>
+            <td><input id="p3-change" type="text" value="player3" onkeydown="if(event.keyCode===13 || event.type === 'blur') changePlayerName(3, event)"></td>
+            <td><input id="p4-change" type="text" value="player4" onkeydown="if(event.keyCode===13 || event.type === 'blur') changePlayerName(4, event)"></td>
+        </tr>
+    </table>
+    <button onclick="window.location.href = '../index.html';">Go back to index</button>
+</body>
+</html>
